@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Library Management System</h1>
+        
+        <div class="form">
+            <h2>Add a Book</h2>
+            <input type="text" id="title" placeholder="Title">
+            <input type="text" id="author" placeholder="Author">
+            <input type="text" id="isbn" placeholder="ISBN">
+            <button onclick="addBook()">Add Book</button>
+        </div>
+
+        <div class="form">
+            <h2>Search and Remove a Book</h2>
+            <input type="text" id="search-isbn" placeholder="Enter ISBN to search/remove">
+            <button onclick="searchBook()">Search Book</button>
+            <button onclick="removeBook()">Remove Book</button>
+        </div>
+
+        <div class="book-list">
+            <h2>Book List</h2>
+            <ul id="book-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
